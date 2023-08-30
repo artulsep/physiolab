@@ -1,5 +1,74 @@
 
 patient {
-  identifer
+  profile
+	healthdata
+	}
 
-  
+healthdata {
+	history
+	vitals
+ 	}
+
+history {
+	medical
+	surgical
+	medications
+	}
+
+vitals {
+	standard
+		heartrate
+		bloodpressure
+			systolic
+			diastolic
+			map
+		oxygensaturation
+		ekg
+
+	invasive
+		???
+	}
+
+physiology {
+	model
+		formula
+			vitals
+				hr x sv = CO
+		system
+			cardiac
+			respiratory
+	}
+
+surgery {
+	name
+	description
+	specialty
+	approach
+	
+	}
+
+diagnosis {
+
+	}
+
+anesthesia {
+	anesthetic
+		method
+		medication
+	event
+	people
+	equipment
+	plan
+	}
+
+medication {
+	name
+	dose
+	route
+	categeory
+		anesthetic
+	}
+
+
+	
+
