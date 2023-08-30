@@ -1,7 +1,39 @@
+common
+	name
+	description
+	number
+	
+
+name
+	firstname
+	lastname
+	middlename
+
+description
+	short
+	long
+
+number
+	value
+	unit
+	purpose
+		static
+		reference
+			normalrange
+				upperrange
+				lowerrange
+		input
+		output
+		
+
 
 patient {
   profile
 	healthdata
+	status
+		inpatient
+		outpatient
+		chartreview
 	}
 
 healthdata {
@@ -37,6 +69,7 @@ physiology {
 		system
 			cardiac
 			respiratory
+				mv = rr x tv
 	}
 
 surgery {
@@ -44,27 +77,43 @@ surgery {
 	description
 	specialty
 	approach
+		lap
+		open
 	
 	}
 
 diagnosis {
-
+	medicalhistory
+		diabetes
+		hypertension
 	}
 
 anesthesia {
 	anesthetic
 		method
+			general
+			regional
+			monitoredanesthesiacare
 		medication
+			name
 	event
+		induction
+		emergence
+		adverse
 	people
 	equipment
+		airway
+		machine
 	plan
+		
 	}
 
 medication {
 	name
 	dose
 	route
+		intravenous
+		inhalation
 	categeory
 		anesthetic
 	}
